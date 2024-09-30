@@ -39,7 +39,6 @@ public class ClickableTile : MonoBehaviour
             Vector3Int cellPosition = map.WorldToCell(pz);
 
             // set selectedUnit to clicked location on grid
-            // Instantiate(prop,cellPosition.ConvertTo(Vector3));
             Debug.Log(cellPosition);
         }
     }

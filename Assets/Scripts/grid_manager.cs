@@ -37,7 +37,6 @@ public class grid_manager : MonoBehaviour
                 Vector3 cell_center = map.GetCellCenterWorld(pos);
                 cell_center.z-=2;
 
-                // Prop p = Instantiate(prop, cell_center, Quaternion.identity);
                 ClickableTile ctile = Instantiate(ctile_template,cell_center, Quaternion.identity);
                 slots[pos] = ctile;
             }
@@ -62,7 +61,6 @@ public class grid_manager : MonoBehaviour
 
                 targetTile.Prop = ctile_template.Prop;
 
-                // Instantiate(ctile_template.Prop,cell_center,Quaternion.identity);
                 Debug.DrawRay(grid.CellToWorld(cellPosition),Vector3.one,Color.blue,3f);
             }
             
@@ -84,7 +82,6 @@ public class grid_manager : MonoBehaviour
 
                 targetTile.Prop = null;
 
-                // Instantiate(ctile_template.Prop,cell_center,Quaternion.identity);
                 Debug.DrawRay(grid.CellToWorld(cellPosition),Vector3.one,Color.blue,3f);
             }
 
