@@ -13,6 +13,7 @@ public class grid_manager : MonoBehaviour
     private GridLayout grid;
 
     public Dictionary<Vector3Int,ClickableTile> slots;
+    public ClickableTile[] slots1;
     public ClickableTile[] prefilled_tiles;
     public ClickableTile ctile_template;
 
