@@ -41,7 +41,7 @@ public class grid_manager : MonoBehaviour
     public Prop getItemAt(Vector3Int pos){
         foreach(Prop p in props){
             foreach(Vector3Int cell in p.shape){
-                if(pos == p.gridLocation + cell){
+                if(pos == p.GridLocation + cell){
                     return p;
                 }
             }
@@ -74,7 +74,7 @@ public class grid_manager : MonoBehaviour
         cell_center.z-=2;
 
         Prop new_prop = Instantiate(selected_prop,cell_center, Quaternion.identity);
-        new_prop.gridLocation = pos; // this may be unnecessary. See Start() in prop.cs
+        new_prop.GridLocation = pos; // this may be unnecessary. See Start() in prop.cs
         props.Add(new_prop);
         // Debug.Log("set prop to " + new_prop);
     }
