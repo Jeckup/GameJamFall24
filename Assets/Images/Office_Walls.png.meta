@@ -113,8 +113,8 @@ TextureImporter:
       name: OfficeTileMap01 1_0
       rect:
         serializedVersion: 2
-        x: 300
-        y: 500
+        x: 500
+        y: 496
         width: 200
         height: 100
       alignment: 0
