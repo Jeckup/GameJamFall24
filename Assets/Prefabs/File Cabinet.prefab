@@ -97,9 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52118a6d091a87e498e14859b55086af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  map: {fileID: 0}
+  original_Prop: {fileID: 5595971361355304443}
   shape:
   - {x: 0, y: 0}
   - {x: 1, y: 0}
-  spriteRenderer: {fileID: 0}
   score: 5
