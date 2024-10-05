@@ -15,7 +15,7 @@ public class test_rotate : MonoBehaviour
         pz.z = 0;
 
         // convert mouse click's position to Grid position
-        Vector3Int cellPosition = prop.map.WorldToCell(pz);
+        Vector3Int cellPosition = SingletonMap.Instance.Map.WorldToCell(pz);
         prop.GridLocation = cellPosition;
 
         // rotate
