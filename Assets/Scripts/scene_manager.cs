@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class scene_manager : MonoBehaviour
 {
+
     public void PlayGame(string levelName)
     {
-        SceneManager.LoadSceneAsync("Test Scene");
+        SceneManager.LoadSceneAsync(levelName);
     }
 
     public void QuitGame()

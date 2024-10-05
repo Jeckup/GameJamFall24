@@ -17,19 +17,18 @@ public class level_manager : MonoBehaviour
 
     private void Start()
     {
-        currentBudget = 100;//numberOfClassObjects * 10;
+        
     }
 
     private void Update()
     {
         float numberOfClassObjects = GameObject.FindObjectsOfType(typeof(Prop)).Length;
 
-        
+        currentBudget = numberOfClassObjects ;
 
-        //Debug.Log(currentBudget);
+        budgetBar.fillAmount = currentBudget/goalBudget;
 
-        budgetBar.fillAmount = currentBudget/1000;
-
+        /*
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             Debug.Log("pressed");
@@ -37,6 +36,7 @@ public class level_manager : MonoBehaviour
         }
 
         //Debug.Log(budgetBar.fillAmount);
+        */
     }
 
 
