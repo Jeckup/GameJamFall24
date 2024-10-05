@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Properties;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -12,7 +13,7 @@ public class ClickableTile : MonoBehaviour
     public Tilemap map;
 
     [SerializeField] private Prop prop; 
-    [DoNotSerialize] public Vector3Int gridLocation; // currently, this is only used for when the item is already on the map. Otherwise, don't touch this
+    public Vector3Int gridLocation; // currently, this is only used for when the item is already on the map. Otherwise, don't touch this
 
     void Start()
     {
