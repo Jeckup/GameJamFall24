@@ -101,4 +101,6 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: 1, y: 0}
   - {x: 2, y: 0}
-  score: 5
+  cost: 10
+  load: 2
+  propName: 2

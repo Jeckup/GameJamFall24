@@ -6,15 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class scene_manager : MonoBehaviour
 {
-
+    // [SerializeField] private AudioSource audioSource;
     public void PlayGame(string levelName)
     {
+        // audioSource.Play();
         SceneManager.LoadSceneAsync(levelName);
+    }
+
+    public void Restart(){
+        // audioSource.Play();
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void QuitGame()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        // audioSource.Play();
         Application.Quit();
     }
 }

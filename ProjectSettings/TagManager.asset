@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Prefilled_Prop
+  - MainMusic
   layers:
   - Default
   - TransparentFX
@@ -39,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: New Layer 1
+    uniqueID: 2058221093
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

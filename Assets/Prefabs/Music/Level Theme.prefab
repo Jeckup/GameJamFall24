@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1629863851989334203}
   - component: {fileID: 5833073004147734013}
+  - component: {fileID: 1172213490518319825}
   m_Layer: 0
   m_Name: Level Theme
   m_TagString: Untagged
@@ -128,3 +129,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1172213490518319825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2848984572185367617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca7b15aff3efbf4a8abc5a9d487049c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

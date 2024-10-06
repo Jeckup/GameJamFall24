@@ -19,7 +19,9 @@ public class Prop : MonoBehaviour
     [field: NonSerialized] public SpriteRenderer spriteRenderer{get;private set;}
 
     // Stuff for score logic
-    public int score = 0;
+    public int cost = 0;
+    public int load = 1;
+    public HUD_Prop.prop_name propName;
 
     void Start()
     {
@@ -29,9 +31,9 @@ public class Prop : MonoBehaviour
 
         gridLocation = Map.WorldToCell(transform.position);
         // in case the initial placement is slightly offcenter
-        Vector3 cell_center = Map.GetCellCenterWorld(gridLocation); 
+        // Vector3 cell_center = Map.GetCellCenterWorld(gridLocation); 
         // cell_center.z-=2;
-        transform.position = cell_center;
+        // transform.position = cell_center;
 
         // in case the rotation by default is not 0
         int num_rotations = (int) transform.rotation.eulerAngles.z % 360;

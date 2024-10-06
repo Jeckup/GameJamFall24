@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52118a6d091a87e498e14859b55086af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  original_Prop: {fileID: 6028455531654025392}
   shape:
   - {x: 0, y: 0}
   - {x: 0, y: 1}
   - {x: 1, y: 0}
   - {x: 2, y: 0}
-  score: 5
+  cost: 8
+  load: 3
+  propName: 4

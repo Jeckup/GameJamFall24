@@ -29,6 +29,8 @@ public class GridManager : MonoBehaviour
             Destroy(selected_prop.GetComponent<BoxCollider2D>());
     }}
 
+    // [SerializeField] private AudioClip buyAudio;
+
     void Awake() 
     { 
         // If there is an instance, and it's not me, delete myself.
@@ -97,6 +99,8 @@ public class GridManager : MonoBehaviour
         Prop new_prop = Instantiate(selected_prop,cell_center, selected_prop.transform.rotation); // some inefficiency, since logically, the hover prop is already rotated and placed properly
         new_prop.GridLocation = pos; // this may be unnecessary. See Start() in prop.cs
         props.Add(new_prop);
+
+        // AudioSource.PlayClipAtPoint(buyAudio,transform.position,1f);
     }
 
     public void createItem(){
@@ -106,7 +110,7 @@ public class GridManager : MonoBehaviour
                     return;
 
         Prop new_prop = Instantiate(selected_prop,selected_prop.transform.position, selected_prop.transform.rotation);
-        Debug.Log("created " + new_prop);
+        // Debug.Log("created " + new_prop);
         props.Add(new_prop);
     }
 
